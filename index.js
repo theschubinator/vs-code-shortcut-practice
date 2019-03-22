@@ -3,11 +3,11 @@ const importedFile = require('./exportFile')
 // ******  BASIC EDITING ****** //
 
 /* Starts With 'Command' Key */
-
 const daysInAYear = 365;
 const hoursInADay = 24;
 const minutesInAHour = 60;
 const secondsInAMinute = 60;
+
 
 const findTimeInSeconds = (time, timeType) => {
 
@@ -22,18 +22,18 @@ const findTimeInSeconds = (time, timeType) => {
 
     if (timeType === 'hours') {
         return time * minutesInAHour * secondsInAMinute
-    }
 
-    if (timeType === 'minutes') {
-        return time * minutesInAHour * secondsInAMinute
-    }
+        if (timeType === 'minutes') {
+            return time * minutesInAHour * secondsInAMinute
+        }
 
-}
+    }
+    }
 
 /*
     1. Move a line up and down
     2. Copy an existing line up and down
-    3. Delete the entire current line
+    3. Delete everything to the right of current line
     4. Insert a new line below your current line
     5. Insert a new line above your current line
     6. Jump to the other end of your matching bracket
@@ -45,8 +45,8 @@ const findTimeInSeconds = (time, timeType) => {
 
 
 /* Answers
-    1. Command' + 'Arrow Key'
-    2. Shift' + 'Command' + 'Arrow Key'
+    1. Option' + 'Arrow Key'
+    2. Shift' + 'Option' + 'Arrow Key'
     3. 'Command' + 'K'
     4. 'Command' + 'Enter'
     5. 'Shift' + 'Command' + 'Enter'
@@ -61,8 +61,8 @@ const findTimeInSeconds = (time, timeType) => {
 
 /* Starts With 'Option' Key */
 
-const daysInAYear = 365;
 const hoursInADay = 24;
+const daysInAYear = 365;
 const minutesInAHour = 60;
 const secondsInAMinute = 60;
 
@@ -101,7 +101,7 @@ const findTimeInSeconds = (time, timeType) => {
 /* Answers
     1. 'Option' + 'mouse click'
     2. 'Option' + 'Command' + 'arrow button'
-    3. 'Option' + 'U'
+    3. 'Option' + 'Command' + 'U'
     4. 'Option' + 'Command' + 'E'
     5. 'Option' + 'S'
     6. 'Option' + 'Command' + 'S'
@@ -186,7 +186,7 @@ const findTimeInSeconds = (time, timeType) => {
     1. Toggle full screen mode
     2. Split the editor
     3. Focus on a specific editor in split view
-    4. Close current open editor
+    4. Close current active editor
     5. Open a new window
     6. Reopen closed editor
     7. Close all open editor panels
@@ -227,7 +227,7 @@ const findTimeInSeconds = (time, timeType) => {
 
 /*
     1. 'Control' + 'T'
-    2. 'Control' + 'Shift' + 'T'
+    2. 'Control' + 'Command' + 'T'
     3. 'Control' + '\'
     4. 'Control' + 'S'
     5. 'Control' + 'Command' + 'Arrow Key'
