@@ -7,7 +7,7 @@ const daysInAYear = 365;
 const hoursInADay = 24;
 const minutesInAHour = 60;
 const secondsInAMinute = 60;
-
+/**/
 
 const findTimeInSeconds = (time, timeType) => {
 
@@ -28,19 +28,22 @@ const findTimeInSeconds = (time, timeType) => {
         }
 
     }
-    }
+}
+
 
 /*
     1. Move a line up and down
     2. Copy an existing line up and down
-    3. Delete everything to the right of current line
-    4. Insert a new line below your current line
-    5. Insert a new line above your current line
-    6. Jump to the other end of your matching bracket
-    7. Indent or out-dent your current line
-    8. Go to the beginning or end of your current line
-    9. Go to the very top or bottom of your editor
-    10. Go to next viewable area of editor
+    3. Delete current line
+    4. Delete line to the left
+    5. Delete line to the right
+    6. Insert a new line below your current line
+    7. Insert a new line above your current line
+    8. Jump to the other end of your matching bracket
+    9. Indent or out-dent your current line
+    10. Go to the beginning or end of your current line
+    11. Go to the very top or bottom of your editor
+    12. Go to next viewable area of editor
 */
 
 
@@ -48,13 +51,15 @@ const findTimeInSeconds = (time, timeType) => {
     1. Option' + 'Arrow Key'
     2. Shift' + 'Option' + 'Arrow Key'
     3. 'Command' + 'K'
-    4. 'Command' + 'Enter'
-    5. 'Shift' + 'Command' + 'Enter'
-    6. 'Command' + '\'
-    7: 'Command' + '[' or ']'
-    8. 'Command' + 'Arrow Key (Left or Right)'
-    9. 'Command' + 'Array Key (Up or Down)'
-    10. 'PageUp/PageDown'
+    4. 'Command' + 'J'
+    5. 'Command' + 'L'
+    6. 'Command' + 'Enter'
+    7. 'Shift' + 'Command' + 'Enter'
+    8. 'Command' + '\'
+    9: 'Command' + '[' or ']'
+    10. 'Command' + 'Arrow Key (Left or Right)'
+    11. 'Command' + 'Array Key (Up or Down)'
+    12. 'PageUp/PageDown'
 */
 
 // ******  Multi-Cursor and Selection ****** //
