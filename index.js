@@ -15,7 +15,7 @@ const findTimeInSeconds = (time, timeType) => {
 
     if (timeType === 'years') {
         return time * daysInAYear * hoursInADay * minutesInAHour * secondsInAMinute
-    }
+        }
     if (timeType === 'days') {
         return time  * hoursInADay * minutesInAHour * secondsInAMinute
     }
@@ -66,10 +66,6 @@ const findTimeInSeconds = (time, timeType) => {
 
 /* Starts With 'Option' Key */
 
-const hoursInADay = 24;
-const daysInAYear = 365;
-const minutesInAHour = 60;
-const secondsInAMinute = 60;
 
 const findTimeInSeconds = (time, timeType) => {
 
