@@ -236,5 +236,5 @@ const findTimeInSeconds = (time, timeType) => {
     3. 'Control' + '\'
     4. 'Control' + 'S'
     5. 'Control' + 'Command' + 'Arrow Key'
-    6. 'Control' + 'C'
+    6. 'Control' + 'K'
 */
